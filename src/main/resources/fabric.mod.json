@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "oreomod",
+	"version": "${version}",
+	"name": "Oreo Mod",
+	"description": "Adds a yummy oreo to Minecraft!",
+	"authors": [
+		"Leenc"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/oreomod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"linc.oreomod.OreoMod"
+		],
+		"fabric-datagen": [
+			"linc.oreomod.OreoModDataGenerator"
+		],
+		"client": [
+			"linc.oreomod.OreoModClient"
+		]
+	},
+	"mixins": [
+		"oreomod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
